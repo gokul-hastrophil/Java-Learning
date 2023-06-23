@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int kg = sc.nextInt();
+		if (kg%2 == 0){
+		if ((kg>1) && (kg<=100)){
+		    int div = kg/2;
+		    if (div%2==0){
+		        System.out.println("YES");
+		        System.out.println(div+" "+div);
+		    }
+		    else{
+		        System.out.println("NO");
+		    }
+		    
+		}
+		else{
+		    System.out.println("Invalid Input");
+		}}
+		else{
+		    System.out.println("NO");
+		}
+	}
+}
